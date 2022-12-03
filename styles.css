@@ -10,6 +10,8 @@
     margin-top: 60px;
     gap:20px 20px;
     flex-direction: column;
+    box-shadow: 8px 8px 8px rgb(51, 51, 51);
+    cursor: grab;
     
 }
 
@@ -18,6 +20,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: rgb(228, 179, 114);
+    background-image: url('lightbackground.jpg');
 
 }
 
@@ -28,17 +31,26 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
 }
 
 #screen {
-    height: 100px;
+    height: 60px;
     background-color: rgb(187, 202, 185);
-    width: 450px;
+    width: 410px;
     border-radius: 5px;
     align-self: center;
-    margin-top: 50px;
+    margin-top: 40px;
     border: 5px solid rgb(67, 66, 66);
+    box-shadow: 5px 8px 5px #aaaaaa inset;
+    font-size: 3em;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding:20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
 }
 
 #numbers {
@@ -57,8 +69,23 @@ button {
     width: 100px;
     margin: 5px;
     border-radius: 5px;
+    box-shadow: 3px 3px 2px rgb(52, 52, 52);
+    cursor: pointer;
+    
 }
 
-.rows {
+button:hover {
+    font-weight: bold;
+    box-shadow: 3px 3px  rgb(42, 41, 41);
+    
+}
 
+.operation {
+    
+    font-weight: bold;
+    background-color: rgb(235, 94, 94);
+}
+
+#zero {
+    width:210px
 }
